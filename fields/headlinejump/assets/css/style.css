@@ -1,0 +1,53 @@
+.headline-jump {
+	display: block;
+	padding-bottom: .5em;
+
+	counter-reset: jumpcount;
+}
+
+.headline-jump:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.headline-jump-item {
+	margin-right: 1.5em;
+	counter-increment: jumpcount;
+	position: relative;
+	cursor: pointer;
+	padding: .25em 0 .25em 1.75em;
+	white-space: normal !important;
+}
+
+.headline-jump-item:before {
+	position: absolute;
+	content: counter(jumpcount,decimal-leading-zero);
+	left: 0;
+	color: #8dae28;
+	font-weight: 400;
+}
+
+.field-with-headline {
+	padding-top: 1.5em;
+}
+
+.headline-root {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+
+.headline-root:after {
+	content: '';
+	position: absolute;
+	bottom: -.5em;
+	margin-bottom: -2px;
+	height: 2px;
+	width: 100%;
+	background: #000;
+	left: 0;
+}
+
+[data-field="headlinejump"] {
+	display: none;
+}
