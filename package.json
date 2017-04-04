@@ -2,7 +2,7 @@
   "name": "kirby-headline-jump",
   "description": "Kirby Panel headline helper plugin for Kirby CMS",
   "author": "Jens Törnell <jens.tornell@gmail.com>",
-  "version": "0.1",
+  "version": "0.2",
   "type": "kirby-plugin",
   "license": "MIT"
 }

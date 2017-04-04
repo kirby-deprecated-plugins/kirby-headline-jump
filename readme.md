@@ -1,6 +1,6 @@
 # Kirby Headline Jump
 
-*Version 0.1*
+*Version 0.2*
 
 Click to jump between Kirby Panel headline groups.
 
@@ -61,9 +61,10 @@ To make it work as expected, add the following code to your blueprint:
 
 ```
 fields:
-  headlinejump:
-    type: headlinejump
+  headlinejump: headlinejump
 ```
+
+To make it work, you need [headlines](https://getkirby.com/docs/cheatsheet/panel-fields/headline) in your blueprint.
 
 ## Usage
 
@@ -72,13 +73,18 @@ fields:
 
 ## Changelog
 
+**0.2**
+
+- Removed padding hack
+- Added global field definition
+
 **0.1**
 
 - Initial release
 
 ## Requirements
 
-- [**Kirby**](https://getkirby.com/) 2.3+
+- [**Kirby**](https://getkirby.com/) 2.4.1+
 
 ## Disclaimer
 
