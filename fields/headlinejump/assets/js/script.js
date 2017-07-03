@@ -11,39 +11,36 @@
 			}
 
 			var li = '';
-			var headlines = document.querySelectorAll('.field-with-headline');
 
-			for( var i = 0; i < headlines.length; ++i ) {
-				var title = headlines[i].querySelector('.hgroup-title').innerHTML;
-				li += '<li class="headline-jump-item" data-count="' + i + '">' + title + '</li>';
-			}
+			$(document).find('.field-with-headline').each(function( index ) {
+				var title = $(this).find('.hgroup-title').html();
+				li += '<li class="headline-jump-item" data-count="' + index + '">' + title + '</li>';
+			});
 
 			if( li != '' ) {
-				var sidebar = document.querySelector('.sidebar-content');
-				var html = '<h2 class="hgroup hgroup-single-line hgroup-compressed cf">';
+				var sidebar = $('.sidebar-content');
+				var html = '';
+				html += '<h2 class="hgroup hgroup-single-line hgroup-compressed cf">';
 				html += '<span class="hgroup-title"><div class="headline-root">Headlines</div></span>';
 				html += '</h2>';
 				html += '<ul class="nav nav-list sidebar-list headline-jump">' + li + '</ul>';
 				
-				sidebar.innerHTML = sidebar.innerHTML + html;
+				sidebar.append(html);
 
-				var jump_items = sidebar.querySelectorAll('.headline-jump-item');
-				var jump_root = sidebar.querySelector('.headline-root');
-				var i = 0;
+				var jump_items = sidebar.find('.headline-jump-item');
+				var jump_root = sidebar.find('.headline-root');
 
-				for( i = 0; i < jump_items.length; ++i ) {
-					jump_items[i].addEventListener("click", function( event ) {
-						var count = this.getAttribute('data-count');
-						var headlines = document.querySelectorAll('.field-with-headline');
-						var offset = headlines[count].offsetTop;
+				jump_items.on('click', function() {
+					var count = $(this).attr('data-count');
+					var headlines = $(document).find('.field-with-headline');
+					var offset = headlines[count].offsetTop;
 
-						document.querySelector('.mainbar').scrollTop = offset;
-					}, false);
-				}
+					$(document).find('.mainbar').scrollTop(offset);
+				});
 
-				jump_root.addEventListener("click", function( event ) {
-					document.querySelector('.mainbar').scrollTop = 0;
-				}, false);
+				jump_root.on('click', function() {
+					$(document).find('.mainbar').scrollTop(0);
+				});
 			}
 
 		});

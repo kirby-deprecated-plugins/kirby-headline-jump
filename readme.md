@@ -1,6 +1,6 @@
 # Kirby Headline Jump
 
-*Version 0.2*
+*Version 0.3*
 
 Click to jump between Kirby Panel headline groups.
 
@@ -72,6 +72,10 @@ To make it work, you need [headlines](https://getkirby.com/docs/cheatsheet/panel
 - Click the headlines sidebar title "Headlines" to go to the top. 
 
 ## Changelog
+
+**0.3**
+
+- Bugfix - This plugin in combination with the image field drag and drop did not work. Now it does.
 
 **0.2**
 
