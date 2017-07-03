@@ -75,6 +75,7 @@ To make it work, you need [headlines](https://getkirby.com/docs/cheatsheet/panel
 
 **0.3**
 
+- Bugfix - Site option headline jump now works as expected.
 - Bugfix - This plugin in combination with the image field drag and drop did not work. Now it does.
 
 **0.2**
