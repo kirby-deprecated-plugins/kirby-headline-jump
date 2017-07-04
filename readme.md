@@ -1,8 +1,6 @@
 # Kirby Headline Jump
 
-[![](https://img.shields.io/badge/donation-buy%20me%20a%20beer-yellow.svg)](https://www.paypal.me/DevoneraAB)
-
-*Version 0.3*
+![Version 0.3](https://img.shields.io/badge/version-0.3-blue.svg) [![](https://img.shields.io/badge/donate-buy%20me%20a%20beer-yellow.svg)](https://www.paypal.me/DevoneraAB)
 
 Field which makes it possible to jump between Kirby Panel headline groups.
 
