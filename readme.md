@@ -1,4 +1,6 @@
-# Kirby Headline Jump [<img src="https://img.shields.io/badge/donation-buy%20me%20a%20beer-yellow.svg" align="right">](https://www.paypal.me/DevoneraAB)
+# Kirby Headline Jump
+
+[![](https://img.shields.io/badge/donation-buy%20me%20a%20beer-yellow.svg)](https://www.paypal.me/DevoneraAB)
 
 *Version 0.3*
 
