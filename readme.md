@@ -4,7 +4,7 @@
 
 Field which makes it possible to jump between Kirby Panel headline groups.
 
-*To support this project, please consider to [make a donation](https://www.paypal.me/DevoneraAB) :green_apple:*
+*To support this project, please consider to [make a donation](https://www.paypal.me/DevoneraAB)* :green_apple:
 
 ## Background
 
