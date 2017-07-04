@@ -1,10 +1,8 @@
-# Kirby Headline Jump
+# Kirby Headline Jump [<img src="https://img.shields.io/badge/donation-buy%20me%20a%20beer-yellow.svg" align="right">](https://www.paypal.me/DevoneraAB)
 
 *Version 0.3*
 
 Field which makes it possible to jump between Kirby Panel headline groups.
-
-*To support this project, please consider to [make a donation](https://www.paypal.me/DevoneraAB)* :green_apple:
 
 ## Background
 
